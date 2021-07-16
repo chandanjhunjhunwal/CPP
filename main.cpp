@@ -2,6 +2,10 @@
 
 int main() {
     using namespace std;
+    /*
+     * Multi-line Comment
+     */
+    // Single Line Comment
     cout << "My World.\n";
     cout << "Here is 5: " << 5 << "\n";
     cout << "The manipulator endl ";
