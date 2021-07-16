@@ -1,8 +1,7 @@
 #include <iostream>
 
 int main() {
-    using std::cout;
-    using std::endl;
+    using namespace std;
     cout << "My World.\n";
     cout << "Here is 5: " << 5 << "\n";
     cout << "The manipulator endl ";
