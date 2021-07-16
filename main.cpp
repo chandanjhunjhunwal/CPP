@@ -1,11 +1,16 @@
 #include <iostream>
 
+// function Demonstration Function
+// prints out a useful message
+
+void DemonstrationFunction()
+{
+  std::cout << "\n\nYay::In Demo Function\n\n";
+}
+
+//
 int main() {
     using namespace std;
-    /*
-     * Multi-line Comment
-     */
-    // Single Line Comment
     cout << "My World.\n";
     cout << "Here is 5: " << 5 << "\n";
     cout << "The manipulator endl ";
@@ -19,5 +24,8 @@ int main() {
     cout << (double) 7000*7000 << endl;
     cout << "Chandan Jhunjhunwal\n";
     cout << "A C++ Programmer.";
+    cout << "Going into DemonstrationFunction From main";
+    DemonstrationFunction();
+    cout << "Out of DemonstrationFunction, back to main\n";
     return 0;
 }
