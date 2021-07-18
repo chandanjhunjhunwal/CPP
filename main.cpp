@@ -19,6 +19,16 @@ int Subtract(int x, int y){
     return (x-y);
 }
 
+void SizeOfDataType(){
+    std::cout << "Size of int is:\t" << sizeof(int) << " bytes.\n";
+    std::cout << "Size of short is:\t" << sizeof(short) << " bytes.\n";
+    std::cout << "Size of long is:\t" << sizeof(long) << " bytes.\n";
+    std::cout << "Size of double is:\t" << sizeof(double) << " bytes.\n";
+    std::cout << "Size of float is:\t" << sizeof(float) << " bytes.\n";
+    std::cout << "Size of char is:\t" << sizeof(char) << " bytes.\n";
+    std::cout << "Size of boolean is:\t" << sizeof(bool) << " bytes.\n";
+}
+
 int main() {
     std::cout << "My World.\n";
     std::cout << "Here is 5: " << 5 << "\n";
@@ -38,13 +48,16 @@ int main() {
     std::cout << "Out of DemonstrationFunction, back to main\n";
     int a, b, c, d;
     std::cout << "Enter the two numbers to add\n";
-    std::cin >> a;
-    std::cin >> b;
+//    std::cin >> a;
+//    std::cin >> b;
+    a = 100;
+    b = 10;
     std::cout << "Calling Add()\n";
     c = Add(a,b);
     d = Subtract(a,b);
     std::cout << "\nSum is : " << c ;
-    std::cout << "\nDifference is : " << d;
+    std::cout << "\nDifference is : " << d << std::endl;
+    SizeOfDataType();
     std::cout << "\nExisting the program\n";
     return 0;
 }
