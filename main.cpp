@@ -29,6 +29,16 @@ void SizeOfDataType(){
     std::cout << "Size of boolean is:\t" << sizeof(bool) << " bytes.\n";
 }
 
+float AreaCalculator(float width, float height) {
+    return (width*height);
+}
+
+void charSet(){
+    for(int i = 32; i < 128; i++){
+        std::cout << "Char " << i << " = " << char(i) << std::endl;
+    }
+}
+
 int main() {
     std::cout << "My World.\n";
     std::cout << "Here is 5: " << 5 << "\n";
@@ -58,6 +68,13 @@ int main() {
     std::cout << "\nSum is : " << c ;
     std::cout << "\nDifference is : " << d << std::endl;
     SizeOfDataType();
-    std::cout << "\nExisting the program\n";
+    float width = 2.5, length = 10.0, area;
+    std::cout << "Area of rectangle with width: " << width << " and length: " << length << " = " << AreaCalculator(width, length) << std::endl;
+    typedef unsigned short int USHORT;
+    USHORT myWidth = 5, myLength = 10;
+    USHORT myArea = myWidth*myLength;
+    std::cout << "Area with USHORT: " << myArea << std::endl;
+    charSet();
+    std::cout << "\nExisting the program\n\a";
     return 0;
 }
